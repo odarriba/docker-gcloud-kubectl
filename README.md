@@ -13,12 +13,14 @@ $ export CLOUDSDK_CORE_PROJECT="YOUR_GCLOUD_PROJECT"
 ```
 
 2. Authorize account:
+
 ```
 $ echo YOUR_JSON_KEY | tee gcloud.json
 $ gcloud auth activate-service-account SERVICE_ACCOUNT_EMAIL --key-file gcloud.json
 ```
 
 3. Get cluster credentials:
+
 ```
 $ gcloud container clusters get-credentials CLUSTER_NAME
 ```
