@@ -8,7 +8,7 @@ ENV GCLOUD_VERSION="155.0.0" \
 WORKDIR /
 
 RUN apt-get update -qq && \
-    apt-get install -y -qq curl && \
+    apt-get install -y -qq curl ruby && \
     pip install pyopenssl && \
     curl -LO "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${GCLOUD_VERSION}-linux-x86_64.tar.gz" && \
     tar -xzf google-cloud-sdk-${GCLOUD_VERSION}-linux-x86_64.tar.gz && \
