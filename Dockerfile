@@ -2,7 +2,7 @@ FROM python:2.7
 
 MAINTAINER Óscar de Arriba <odarriba@gmail.com>
 
-ENV GCLOUD_VERSION="155.0.0" \
+ENV GCLOUD_VERSION="189.0.0" \
     PATH="/google-cloud-sdk/bin:$PATH"
 
 WORKDIR /
